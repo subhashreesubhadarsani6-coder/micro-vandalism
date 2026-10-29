@@ -1,0 +1,28 @@
+# Python Virtual Environment
+.venv/
+venv/
+env/
+ENV/
+
+# Python Cache & Bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Large Archives (>100MB, exceeds GitHub limits)
+*.zip
+carving.zip
+vandalism_dataset.zip
+
+# Duplicate raw video folder
+data/raw/vandalism_dataset/
+
+# Temporary and System Files
+*.tmp
+*.log
+.DS_Store
+Thumbs.db

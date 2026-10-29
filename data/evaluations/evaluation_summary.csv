@@ -1,0 +1,6 @@
+model_name,backbone,num_frames,num_test_samples,accuracy,balanced_accuracy,macro_f1,weighted_f1,macro_precision,macro_recall,roc_auc,pr_auc,brier_score,expected_calibration_error,latency_mean_ms,latency_p95_ms,throughput_clips_sec,peak_memory_mb
+LogisticRegression_Baseline_8f,mobilenet_v3_small,8,100,0.51,0.5,0.3377,0.3445,0.255,0.5,1.0,1.0,0.4888,0.4894,0.48,0.65,2060.31,0.04
+LogisticRegression_Baseline_16f,mobilenet_v3_small,16,100,0.51,0.5,0.3377,0.3445,0.255,0.5,1.0,1.0,0.49,0.49,0.51,0.82,1960.31,0.04
+TemporalPoolingBaseline_8f,mobilenet_v3_small,8,100,0.49,0.5,0.3289,0.3223,0.245,0.5,0.0404,0.3176,0.2679,0.0529,0.48,0.61,2079.11,0.04
+TemporalConv1DNet_8f,mobilenet_v3_small,8,100,0.48,0.4898,0.3243,0.3178,0.2424,0.4898,0.0516,0.3195,0.2774,0.0784,1.07,1.46,932.28,0.04
+TemporalConv1DNet_16f,mobilenet_v3_small,16,100,0.38,0.3878,0.2754,0.2699,0.2135,0.3878,0.1357,0.3352,0.2641,0.149,1.1,1.48,910.1,0.04

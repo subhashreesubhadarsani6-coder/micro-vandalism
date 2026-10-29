@@ -1,0 +1,514 @@
+{
+  "timestamp": "2026-10-30T00:10:19.192617",
+  "model_version": "1.0.0-cpu",
+  "model_type": "conv1d",
+  "backbone": "mobilenet_v3_small",
+  "num_frames": 8,
+  "review_threshold": 0.35,
+  "alert_threshold": 0.7,
+  "confidence_threshold": 0.4,
+  "total_videos": 5,
+  "successful": 5,
+  "errors": 0,
+  "verdict_counts": {
+    "NORMAL": 0,
+    "UNCERTAIN / HUMAN REVIEW": 5,
+    "POTENTIAL VANDALISM": 0,
+    "ERROR": 0
+  },
+  "category_counts": {
+    "benign_activity": 0,
+    "ambiguous_interaction": 0,
+    "potential_damage": 5,
+    "unknown": 0
+  },
+  "average_latency_ms": 242.82,
+  "total_processing_sec": 1.22,
+  "results": [
+    {
+      "video_path": "C:\\Project\\micro vandalism\\data\\raw\\normal\\normal (1).mp4",
+      "status": "success",
+      "predicted_label": "potential_marking",
+      "confidence": 0.09780000150203705,
+      "risk_score": 0.4091,
+      "action_category": "potential_damage",
+      "verdict": "UNCERTAIN / HUMAN REVIEW",
+      "uncertainty_flag": true,
+      "probabilities": {
+        "ambiguous_interaction": 0.09229999780654907,
+        "inspection": 0.09080000221729279,
+        "normal_looking": 0.094200000166893,
+        "permitted_touching": 0.0835999995470047,
+        "photographing": 0.09019999951124191,
+        "pointing": 0.09480000287294388,
+        "potential_chipping": 0.0940999984741211,
+        "potential_marking": 0.09780000150203705,
+        "potential_scraping": 0.08799999952316284,
+        "potential_scratching": 0.08900000154972076,
+        "walking": 0.0851999968290329
+      },
+      "peak_evidence_timestamp_sec": 2.436,
+      "peak_evidence_frame_idx": 73,
+      "sampled_frames": [
+        {
+          "sample_index": 0,
+          "frame_index": 0,
+          "timestamp_sec": 0.0,
+          "attention_weight": 0.125,
+          "is_peak_evidence": false
+        },
+        {
+          "sample_index": 1,
+          "frame_index": 24,
+          "timestamp_sec": 0.801,
+          "attention_weight": 0.125,
+          "is_peak_evidence": false
+        },
+        {
+          "sample_index": 2,
+          "frame_index": 49,
+          "timestamp_sec": 1.635,
+          "attention_weight": 0.125,
+          "is_peak_evidence": false
+        },
+        {
+          "sample_index": 3,
+          "frame_index": 73,
+          "timestamp_sec": 2.436,
+          "attention_weight": 0.125,
+          "is_peak_evidence": true
+        },
+        {
+          "sample_index": 4,
+          "frame_index": 98,
+          "timestamp_sec": 3.27,
+          "attention_weight": 0.125,
+          "is_peak_evidence": false
+        },
+        {
+          "sample_index": 5,
+          "frame_index": 122,
+          "timestamp_sec": 4.071,
+          "attention_weight": 0.125,
+          "is_peak_evidence": false
+        },
+        {
+          "sample_index": 6,
+          "frame_index": 147,
+          "timestamp_sec": 4.905,
+          "attention_weight": 0.12489999830722809,
+          "is_peak_evidence": false
+        },
+        {
+          "sample_index": 7,
+          "frame_index": 172,
+          "timestamp_sec": 5.739,
+          "attention_weight": 0.125,
+          "is_peak_evidence": false
+        }
+      ],
+      "video_duration_sec": 5.77,
+      "video_fps": 29.97,
+      "video_total_frames": 173,
+      "decode_and_preprocess_ms": 203.47,
+      "inference_ms": 43.2,
+      "total_latency_ms": 246.67,
+      "model_version": "1.0.0-cpu",
+      "model_type": "conv1d",
+      "backbone": "mobilenet_v3_small",
+      "num_frames": 8,
+      "localization_type": "clip_level_with_temporal_frame_saliency",
+      "error_type": null,
+      "error_message": null,
+      "disclaimer": "Action recognition detects temporal movement patterns. It does NOT confirm physical damage or malicious intent. Human review by heritage staff is mandatory before taking enforcement action."
+    },
+    {
+      "video_path": "C:\\Project\\micro vandalism\\data\\raw\\normal\\normal (10).mp4",
+      "status": "success",
+      "predicted_label": "potential_marking",
+      "confidence": 0.09780000150203705,
+      "risk_score": 0.4091,
+      "action_category": "potential_damage",
+      "verdict": "UNCERTAIN / HUMAN REVIEW",
+      "uncertainty_flag": true,
+      "probabilities": {
+        "ambiguous_interaction": 0.09229999780654907,
+        "inspection": 0.09080000221729279,
+        "normal_looking": 0.094200000166893,
+        "permitted_touching": 0.0835999995470047,
+        "photographing": 0.09019999951124191,
+        "pointing": 0.09480000287294388,
+        "potential_chipping": 0.0940999984741211,
+        "potential_marking": 0.09780000150203705,
+        "potential_scraping": 0.08799999952316284,
+        "potential_scratching": 0.08900000154972076,
+        "walking": 0.0851999968290329
+      },
+      "peak_evidence_timestamp_sec": 4.6,
+      "peak_evidence_frame_idx": 115,
+      "sampled_frames": [
+        {
+          "sample_index": 0,
+          "frame_index": 0,
+          "timestamp_sec": 0.0,
+          "attention_weight": 0.125,
+          "is_peak_evidence": false
+        },
+        {
+          "sample_index": 1,
+          "frame_index": 38,
+          "timestamp_sec": 1.52,
+          "attention_weight": 0.125,
+          "is_peak_evidence": false
+        },
+        {
+          "sample_index": 2,
+          "frame_index": 77,
+          "timestamp_sec": 3.08,
+          "attention_weight": 0.125,
+          "is_peak_evidence": false
+        },
+        {
+          "sample_index": 3,
+          "frame_index": 115,
+          "timestamp_sec": 4.6,
+          "attention_weight": 0.125,
+          "is_peak_evidence": true
+        },
+        {
+          "sample_index": 4,
+          "frame_index": 154,
+          "timestamp_sec": 6.16,
+          "attention_weight": 0.125,
+          "is_peak_evidence": false
+        },
+        {
+          "sample_index": 5,
+          "frame_index": 192,
+          "timestamp_sec": 7.68,
+          "attention_weight": 0.125,
+          "is_peak_evidence": false
+        },
+        {
+          "sample_index": 6,
+          "frame_index": 231,
+          "timestamp_sec": 9.24,
+          "attention_weight": 0.12489999830722809,
+          "is_peak_evidence": false
+        },
+        {
+          "sample_index": 7,
+          "frame_index": 270,
+          "timestamp_sec": 10.8,
+          "attention_weight": 0.125,
+          "is_peak_evidence": false
+        }
+      ],
+      "video_duration_sec": 10.84,
+      "video_fps": 25.0,
+      "video_total_frames": 271,
+      "decode_and_preprocess_ms": 219.71,
+      "inference_ms": 25.53,
+      "total_latency_ms": 245.24,
+      "model_version": "1.0.0-cpu",
+      "model_type": "conv1d",
+      "backbone": "mobilenet_v3_small",
+      "num_frames": 8,
+      "localization_type": "clip_level_with_temporal_frame_saliency",
+      "error_type": null,
+      "error_message": null,
+      "disclaimer": "Action recognition detects temporal movement patterns. It does NOT confirm physical damage or malicious intent. Human review by heritage staff is mandatory before taking enforcement action."
+    },
+    {
+      "video_path": "C:\\Project\\micro vandalism\\data\\raw\\normal\\normal (100).mp4",
+      "status": "success",
+      "predicted_label": "potential_marking",
+      "confidence": 0.09780000150203705,
+      "risk_score": 0.4091,
+      "action_category": "potential_damage",
+      "verdict": "UNCERTAIN / HUMAN REVIEW",
+      "uncertainty_flag": true,
+      "probabilities": {
+        "ambiguous_interaction": 0.09229999780654907,
+        "inspection": 0.09080000221729279,
+        "normal_looking": 0.094200000166893,
+        "permitted_touching": 0.0835999995470047,
+        "photographing": 0.09019999951124191,
+        "pointing": 0.09480000287294388,
+        "potential_chipping": 0.0940999984741211,
+        "potential_marking": 0.09780000150203705,
+        "potential_scraping": 0.08799999952316284,
+        "potential_scratching": 0.08900000154972076,
+        "walking": 0.0851999968290329
+      },
+      "peak_evidence_timestamp_sec": 2.269,
+      "peak_evidence_frame_idx": 68,
+      "sampled_frames": [
+        {
+          "sample_index": 0,
+          "frame_index": 0,
+          "timestamp_sec": 0.0,
+          "attention_weight": 0.125,
+          "is_peak_evidence": false
+        },
+        {
+          "sample_index": 1,
+          "frame_index": 22,
+          "timestamp_sec": 0.734,
+          "attention_weight": 0.125,
+          "is_peak_evidence": false
+        },
+        {
+          "sample_index": 2,
+          "frame_index": 45,
+          "timestamp_sec": 1.502,
+          "attention_weight": 0.125,
+          "is_peak_evidence": false
+        },
+        {
+          "sample_index": 3,
+          "frame_index": 68,
+          "timestamp_sec": 2.269,
+          "attention_weight": 0.125,
+          "is_peak_evidence": true
+        },
+        {
+          "sample_index": 4,
+          "frame_index": 90,
+          "timestamp_sec": 3.003,
+          "attention_weight": 0.125,
+          "is_peak_evidence": false
+        },
+        {
+          "sample_index": 5,
+          "frame_index": 113,
+          "timestamp_sec": 3.77,
+          "attention_weight": 0.125,
+          "is_peak_evidence": false
+        },
+        {
+          "sample_index": 6,
+          "frame_index": 136,
+          "timestamp_sec": 4.538,
+          "attention_weight": 0.12489999830722809,
+          "is_peak_evidence": false
+        },
+        {
+          "sample_index": 7,
+          "frame_index": 159,
+          "timestamp_sec": 5.305,
+          "attention_weight": 0.125,
+          "is_peak_evidence": false
+        }
+      ],
+      "video_duration_sec": 5.34,
+      "video_fps": 29.97,
+      "video_total_frames": 160,
+      "decode_and_preprocess_ms": 139.0,
+      "inference_ms": 26.71,
+      "total_latency_ms": 165.71,
+      "model_version": "1.0.0-cpu",
+      "model_type": "conv1d",
+      "backbone": "mobilenet_v3_small",
+      "num_frames": 8,
+      "localization_type": "clip_level_with_temporal_frame_saliency",
+      "error_type": null,
+      "error_message": null,
+      "disclaimer": "Action recognition detects temporal movement patterns. It does NOT confirm physical damage or malicious intent. Human review by heritage staff is mandatory before taking enforcement action."
+    },
+    {
+      "video_path": "C:\\Project\\micro vandalism\\data\\raw\\normal\\normal (101).mp4",
+      "status": "success",
+      "predicted_label": "potential_marking",
+      "confidence": 0.09780000150203705,
+      "risk_score": 0.4091,
+      "action_category": "potential_damage",
+      "verdict": "UNCERTAIN / HUMAN REVIEW",
+      "uncertainty_flag": true,
+      "probabilities": {
+        "ambiguous_interaction": 0.09229999780654907,
+        "inspection": 0.09080000221729279,
+        "normal_looking": 0.094200000166893,
+        "permitted_touching": 0.0835999995470047,
+        "photographing": 0.09019999951124191,
+        "pointing": 0.09480000287294388,
+        "potential_chipping": 0.0940999984741211,
+        "potential_marking": 0.09780000150203705,
+        "potential_scraping": 0.08799999952316284,
+        "potential_scratching": 0.08900000154972076,
+        "walking": 0.0851999968290329
+      },
+      "peak_evidence_timestamp_sec": 8.52,
+      "peak_evidence_frame_idx": 213,
+      "sampled_frames": [
+        {
+          "sample_index": 0,
+          "frame_index": 0,
+          "timestamp_sec": 0.0,
+          "attention_weight": 0.125,
+          "is_peak_evidence": false
+        },
+        {
+          "sample_index": 1,
+          "frame_index": 71,
+          "timestamp_sec": 2.84,
+          "attention_weight": 0.125,
+          "is_peak_evidence": false
+        },
+        {
+          "sample_index": 2,
+          "frame_index": 142,
+          "timestamp_sec": 5.68,
+          "attention_weight": 0.125,
+          "is_peak_evidence": false
+        },
+        {
+          "sample_index": 3,
+          "frame_index": 213,
+          "timestamp_sec": 8.52,
+          "attention_weight": 0.125,
+          "is_peak_evidence": true
+        },
+        {
+          "sample_index": 4,
+          "frame_index": 284,
+          "timestamp_sec": 11.36,
+          "attention_weight": 0.125,
+          "is_peak_evidence": false
+        },
+        {
+          "sample_index": 5,
+          "frame_index": 355,
+          "timestamp_sec": 14.2,
+          "attention_weight": 0.125,
+          "is_peak_evidence": false
+        },
+        {
+          "sample_index": 6,
+          "frame_index": 426,
+          "timestamp_sec": 17.04,
+          "attention_weight": 0.12489999830722809,
+          "is_peak_evidence": false
+        },
+        {
+          "sample_index": 7,
+          "frame_index": 498,
+          "timestamp_sec": 19.92,
+          "attention_weight": 0.125,
+          "is_peak_evidence": false
+        }
+      ],
+      "video_duration_sec": 19.96,
+      "video_fps": 25.0,
+      "video_total_frames": 499,
+      "decode_and_preprocess_ms": 217.77,
+      "inference_ms": 24.59,
+      "total_latency_ms": 242.37,
+      "model_version": "1.0.0-cpu",
+      "model_type": "conv1d",
+      "backbone": "mobilenet_v3_small",
+      "num_frames": 8,
+      "localization_type": "clip_level_with_temporal_frame_saliency",
+      "error_type": null,
+      "error_message": null,
+      "disclaimer": "Action recognition detects temporal movement patterns. It does NOT confirm physical damage or malicious intent. Human review by heritage staff is mandatory before taking enforcement action."
+    },
+    {
+      "video_path": "C:\\Project\\micro vandalism\\data\\raw\\normal\\normal (102).mp4",
+      "status": "success",
+      "predicted_label": "potential_marking",
+      "confidence": 0.09780000150203705,
+      "risk_score": 0.4091,
+      "action_category": "potential_damage",
+      "verdict": "UNCERTAIN / HUMAN REVIEW",
+      "uncertainty_flag": true,
+      "probabilities": {
+        "ambiguous_interaction": 0.09229999780654907,
+        "inspection": 0.09080000221729279,
+        "normal_looking": 0.094200000166893,
+        "permitted_touching": 0.0835999995470047,
+        "photographing": 0.09019999951124191,
+        "pointing": 0.09480000287294388,
+        "potential_chipping": 0.0940999984741211,
+        "potential_marking": 0.09780000150203705,
+        "potential_scraping": 0.08799999952316284,
+        "potential_scratching": 0.08900000154972076,
+        "walking": 0.0851999968290329
+      },
+      "peak_evidence_timestamp_sec": 8.6,
+      "peak_evidence_frame_idx": 215,
+      "sampled_frames": [
+        {
+          "sample_index": 0,
+          "frame_index": 0,
+          "timestamp_sec": 0.0,
+          "attention_weight": 0.125,
+          "is_peak_evidence": false
+        },
+        {
+          "sample_index": 1,
+          "frame_index": 71,
+          "timestamp_sec": 2.84,
+          "attention_weight": 0.125,
+          "is_peak_evidence": false
+        },
+        {
+          "sample_index": 2,
+          "frame_index": 143,
+          "timestamp_sec": 5.72,
+          "attention_weight": 0.125,
+          "is_peak_evidence": false
+        },
+        {
+          "sample_index": 3,
+          "frame_index": 215,
+          "timestamp_sec": 8.6,
+          "attention_weight": 0.125,
+          "is_peak_evidence": true
+        },
+        {
+          "sample_index": 4,
+          "frame_index": 286,
+          "timestamp_sec": 11.44,
+          "attention_weight": 0.125,
+          "is_peak_evidence": false
+        },
+        {
+          "sample_index": 5,
+          "frame_index": 358,
+          "timestamp_sec": 14.32,
+          "attention_weight": 0.125,
+          "is_peak_evidence": false
+        },
+        {
+          "sample_index": 6,
+          "frame_index": 430,
+          "timestamp_sec": 17.2,
+          "attention_weight": 0.12489999830722809,
+          "is_peak_evidence": false
+        },
+        {
+          "sample_index": 7,
+          "frame_index": 502,
+          "timestamp_sec": 20.08,
+          "attention_weight": 0.125,
+          "is_peak_evidence": false
+        }
+      ],
+      "video_duration_sec": 20.12,
+      "video_fps": 25.0,
+      "video_total_frames": 503,
+      "decode_and_preprocess_ms": 286.77,
+      "inference_ms": 27.33,
+      "total_latency_ms": 314.1,
+      "model_version": "1.0.0-cpu",
+      "model_type": "conv1d",
+      "backbone": "mobilenet_v3_small",
+      "num_frames": 8,
+      "localization_type": "clip_level_with_temporal_frame_saliency",
+      "error_type": null,
+      "error_message": null,
+      "disclaimer": "Action recognition detects temporal movement patterns. It does NOT confirm physical damage or malicious intent. Human review by heritage staff is mandatory before taking enforcement action."
+    }
+  ]
+}

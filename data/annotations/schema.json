@@ -1,0 +1,140 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "EgocentricHeritageVandalismAnnotation",
+  "description": "Annotation record for video action recognition in heritage wall protection",
+  "type": "object",
+  "required": [
+    "video_id",
+    "file_name",
+    "action_label",
+    "camera_viewpoint",
+    "is_egocentric",
+    "verified_by_human"
+  ],
+  "properties": {
+    "video_id": {
+      "type": "string",
+      "description": "Unique identifier for the video clip (e.g. SHA-256 or clip ID)"
+    },
+    "file_name": {
+      "type": "string",
+      "description": "Base filename of the video clip"
+    },
+    "action_label": {
+      "type": "string",
+      "enum": [
+        "ambiguous_interaction",
+        "inspection",
+        "normal_looking",
+        "permitted_touching",
+        "photographing",
+        "pointing",
+        "potential_chipping",
+        "potential_marking",
+        "potential_scraping",
+        "potential_scratching",
+        "walking",
+        "unverified",
+        "ambiguous_interaction"
+      ],
+      "description": "Action class according to the heritage protection taxonomy"
+    },
+    "start_sec": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "minimum": 0.0,
+      "description": "Optional start timestamp in seconds for the action event"
+    },
+    "end_sec": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "minimum": 0.0,
+      "description": "Optional end timestamp in seconds for the action event"
+    },
+    "is_egocentric": {
+      "type": "boolean",
+      "description": "True if filmed from a first-person / body-worn camera perspective"
+    },
+    "camera_viewpoint": {
+      "type": "string",
+      "enum": [
+        "drone",
+        "egocentric",
+        "overhead",
+        "stock_footage",
+        "surveillance_cctv",
+        "third_person",
+        "unknown"
+      ],
+      "description": "Observed viewpoint angle"
+    },
+    "watermark_detected": {
+      "type": "boolean",
+      "description": "Whether a stock or camera watermark is present in the frame"
+    },
+    "tool_used": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "enum": [
+        "none",
+        "key",
+        "coin",
+        "pocket_knife",
+        "screwdriver",
+        "metal_stylus",
+        "marker_pen",
+        "spray_can",
+        "chalk",
+        "hand_finger",
+        "camera_phone",
+        "other"
+      ],
+      "description": "Object or tool involved in the physical interaction"
+    },
+    "target_surface": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "enum": [
+        "sandstone",
+        "granite",
+        "limestone",
+        "marble",
+        "brick",
+        "plaster",
+        "painted_mural",
+        "unknown",
+        "not_applicable"
+      ],
+      "description": "Type of architectural or monument substrate"
+    },
+    "verified_by_human": {
+      "type": "boolean",
+      "description": "Must be true; labels must never be assigned based on filename alone"
+    },
+    "annotator_id": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "Identifier of the human annotator or domain reviewer"
+    },
+    "confidence": {
+      "type": "number",
+      "minimum": 0.0,
+      "maximum": 1.0,
+      "description": "Annotator confidence in label (0.0 to 1.0)"
+    },
+    "notes": {
+      "type": "string",
+      "description": "Additional domain observations or edge cases"
+    }
+  }
+}

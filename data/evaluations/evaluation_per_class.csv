@@ -1,0 +1,11 @@
+model_name,num_frames,class_name,precision,recall,f1,support
+LogisticRegression_Baseline_8f,8,normal,0.0,0.0,0.0,49
+LogisticRegression_Baseline_8f,8,carving,0.51,1.0,0.6755,51
+LogisticRegression_Baseline_16f,16,normal,0.0,0.0,0.0,49
+LogisticRegression_Baseline_16f,16,carving,0.51,1.0,0.6755,51
+TemporalPoolingBaseline_8f,8,normal,0.49,1.0,0.6577,49
+TemporalPoolingBaseline_8f,8,carving,0.0,0.0,0.0,51
+TemporalConv1DNet_8f,8,normal,0.4848,0.9796,0.6486,49
+TemporalConv1DNet_8f,8,carving,0.0,0.0,0.0,51
+TemporalConv1DNet_16f,16,normal,0.427,0.7755,0.5507,49
+TemporalConv1DNet_16f,16,carving,0.0,0.0,0.0,51

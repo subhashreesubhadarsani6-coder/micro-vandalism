@@ -1,0 +1,292 @@
+[
+  {
+    "model_name": "LogisticRegression_Baseline_8f",
+    "backbone": "mobilenet_v3_small",
+    "num_frames": 8,
+    "dataset_version": "v1.0-benchmark",
+    "num_test_samples": 100,
+    "accuracy": 0.51,
+    "balanced_accuracy": 0.5,
+    "macro_f1": 0.3377,
+    "weighted_f1": 0.3445,
+    "macro_precision": 0.255,
+    "macro_recall": 0.5,
+    "roc_auc": 1.0,
+    "pr_auc": 1.0,
+    "brier_score": 0.4888,
+    "expected_calibration_error": 0.4894,
+    "confusion_matrix": [
+      [
+        0,
+        49
+      ],
+      [
+        0,
+        51
+      ]
+    ],
+    "class_support": {
+      "normal": 49,
+      "carving": 51
+    },
+    "per_class_metrics": {
+      "normal": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 49
+      },
+      "carving": {
+        "precision": 0.51,
+        "recall": 1.0,
+        "f1": 0.6755,
+        "support": 51
+      }
+    },
+    "latency_mean_ms": 0.48,
+    "latency_median_ms": 0.46,
+    "latency_p95_ms": 0.65,
+    "latency_p99_ms": 0.75,
+    "throughput_clips_sec": 2060.31,
+    "effective_fps": 16482.48,
+    "peak_memory_mb": 0.04,
+    "missing_classes": [],
+    "limitations": [
+      "Evaluated on CPU without GPU acceleration (strictly adheres to CPU target).",
+      "Held-out test set evaluated strictly after model definition (no test snooping).",
+      "Underlying stock videos contain iStock watermark shortcuts and lack egocentric perspective."
+    ]
+  },
+  {
+    "model_name": "LogisticRegression_Baseline_16f",
+    "backbone": "mobilenet_v3_small",
+    "num_frames": 16,
+    "dataset_version": "v1.0-benchmark",
+    "num_test_samples": 100,
+    "accuracy": 0.51,
+    "balanced_accuracy": 0.5,
+    "macro_f1": 0.3377,
+    "weighted_f1": 0.3445,
+    "macro_precision": 0.255,
+    "macro_recall": 0.5,
+    "roc_auc": 1.0,
+    "pr_auc": 1.0,
+    "brier_score": 0.49,
+    "expected_calibration_error": 0.49,
+    "confusion_matrix": [
+      [
+        0,
+        49
+      ],
+      [
+        0,
+        51
+      ]
+    ],
+    "class_support": {
+      "normal": 49,
+      "carving": 51
+    },
+    "per_class_metrics": {
+      "normal": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 49
+      },
+      "carving": {
+        "precision": 0.51,
+        "recall": 1.0,
+        "f1": 0.6755,
+        "support": 51
+      }
+    },
+    "latency_mean_ms": 0.51,
+    "latency_median_ms": 0.46,
+    "latency_p95_ms": 0.82,
+    "latency_p99_ms": 1.08,
+    "throughput_clips_sec": 1960.31,
+    "effective_fps": 31364.96,
+    "peak_memory_mb": 0.04,
+    "missing_classes": [],
+    "limitations": [
+      "Evaluated on CPU without GPU acceleration (strictly adheres to CPU target).",
+      "Held-out test set evaluated strictly after model definition (no test snooping).",
+      "Underlying stock videos contain iStock watermark shortcuts and lack egocentric perspective."
+    ]
+  },
+  {
+    "model_name": "TemporalPoolingBaseline_8f",
+    "backbone": "mobilenet_v3_small",
+    "num_frames": 8,
+    "dataset_version": "v1.0-benchmark",
+    "num_test_samples": 100,
+    "accuracy": 0.49,
+    "balanced_accuracy": 0.5,
+    "macro_f1": 0.3289,
+    "weighted_f1": 0.3223,
+    "macro_precision": 0.245,
+    "macro_recall": 0.5,
+    "roc_auc": 0.0404,
+    "pr_auc": 0.3176,
+    "brier_score": 0.2679,
+    "expected_calibration_error": 0.0529,
+    "confusion_matrix": [
+      [
+        49,
+        0
+      ],
+      [
+        51,
+        0
+      ]
+    ],
+    "class_support": {
+      "normal": 49,
+      "carving": 51
+    },
+    "per_class_metrics": {
+      "normal": {
+        "precision": 0.49,
+        "recall": 1.0,
+        "f1": 0.6577,
+        "support": 49
+      },
+      "carving": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 51
+      }
+    },
+    "latency_mean_ms": 0.48,
+    "latency_median_ms": 0.41,
+    "latency_p95_ms": 0.61,
+    "latency_p99_ms": 0.77,
+    "throughput_clips_sec": 2079.11,
+    "effective_fps": 16632.88,
+    "peak_memory_mb": 0.04,
+    "missing_classes": [],
+    "limitations": [
+      "Evaluated on CPU without GPU acceleration (strictly adheres to CPU target).",
+      "Held-out test set evaluated strictly after model definition (no test snooping).",
+      "Underlying stock videos contain iStock watermark shortcuts and lack egocentric perspective."
+    ]
+  },
+  {
+    "model_name": "TemporalConv1DNet_8f",
+    "backbone": "mobilenet_v3_small",
+    "num_frames": 8,
+    "dataset_version": "v1.0-benchmark",
+    "num_test_samples": 100,
+    "accuracy": 0.48,
+    "balanced_accuracy": 0.4898,
+    "macro_f1": 0.3243,
+    "weighted_f1": 0.3178,
+    "macro_precision": 0.2424,
+    "macro_recall": 0.4898,
+    "roc_auc": 0.0516,
+    "pr_auc": 0.3195,
+    "brier_score": 0.2774,
+    "expected_calibration_error": 0.0784,
+    "confusion_matrix": [
+      [
+        48,
+        1
+      ],
+      [
+        51,
+        0
+      ]
+    ],
+    "class_support": {
+      "normal": 49,
+      "carving": 51
+    },
+    "per_class_metrics": {
+      "normal": {
+        "precision": 0.4848,
+        "recall": 0.9796,
+        "f1": 0.6486,
+        "support": 49
+      },
+      "carving": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 51
+      }
+    },
+    "latency_mean_ms": 1.07,
+    "latency_median_ms": 0.96,
+    "latency_p95_ms": 1.46,
+    "latency_p99_ms": 1.66,
+    "throughput_clips_sec": 932.28,
+    "effective_fps": 7458.24,
+    "peak_memory_mb": 0.04,
+    "missing_classes": [],
+    "limitations": [
+      "Evaluated on CPU without GPU acceleration (strictly adheres to CPU target).",
+      "Held-out test set evaluated strictly after model definition (no test snooping).",
+      "Underlying stock videos contain iStock watermark shortcuts and lack egocentric perspective."
+    ]
+  },
+  {
+    "model_name": "TemporalConv1DNet_16f",
+    "backbone": "mobilenet_v3_small",
+    "num_frames": 16,
+    "dataset_version": "v1.0-benchmark",
+    "num_test_samples": 100,
+    "accuracy": 0.38,
+    "balanced_accuracy": 0.3878,
+    "macro_f1": 0.2754,
+    "weighted_f1": 0.2699,
+    "macro_precision": 0.2135,
+    "macro_recall": 0.3878,
+    "roc_auc": 0.1357,
+    "pr_auc": 0.3352,
+    "brier_score": 0.2641,
+    "expected_calibration_error": 0.149,
+    "confusion_matrix": [
+      [
+        38,
+        11
+      ],
+      [
+        51,
+        0
+      ]
+    ],
+    "class_support": {
+      "normal": 49,
+      "carving": 51
+    },
+    "per_class_metrics": {
+      "normal": {
+        "precision": 0.427,
+        "recall": 0.7755,
+        "f1": 0.5507,
+        "support": 49
+      },
+      "carving": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 51
+      }
+    },
+    "latency_mean_ms": 1.1,
+    "latency_median_ms": 1.0,
+    "latency_p95_ms": 1.48,
+    "latency_p99_ms": 1.9,
+    "throughput_clips_sec": 910.1,
+    "effective_fps": 14561.6,
+    "peak_memory_mb": 0.04,
+    "missing_classes": [],
+    "limitations": [
+      "Evaluated on CPU without GPU acceleration (strictly adheres to CPU target).",
+      "Held-out test set evaluated strictly after model definition (no test snooping).",
+      "Underlying stock videos contain iStock watermark shortcuts and lack egocentric perspective."
+    ]
+  }
+]
